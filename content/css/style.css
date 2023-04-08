@@ -37,72 +37,22 @@ a {
 .text-color {
   color: #03262c;
 }
-.main-btn {
-  background-color: var(--green-color);
-  width: fit-content;
-  color: white;
-  padding: 5px 20px;
-  border-radius: 5px;
-  border: none;
-}
-/* Start Uppernavbar */
-.sticky {
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-}
-.nav-logo {
-  width: 150px;
-  height: 40px;
-}
-.nav {
-  background-color: #262626;
-}
-/* End Uppernavbar */
+/* End General */
 /* Start navbar */
-
 .nav-sticky {
-  position: sticky;
-  top: 70px;
+  position: fixed;
+  top: 20px;
   z-index: 100;
-  margin-top: -580px;
+  width: 100%;
 }
 .nav-item {
-  margin-left: 10px;
   position: relative;
   z-index: 100;
 }
-/* .nav-item:hover{
-    color: #36970e;
-} */
-/* .nav-hover{
-    transition: all 0.5s;
-    width: fit-content;
-    height: 0;
-    background-image: linear-gradient(to right, #0f7404 , #5cb917 );
-    border-radius: 5px;
-    color: white;
-    padding: 0px 3px; 
-    text-decoration: none; 
-} */
-/* .nav-hover:hover{
-    height: 33px;
-    color: white;
-} */
-/* .nav-link{
-    position: relative;
-    margin-right: 12px;
-    transition: all 0.5s;
-    width: fit-content;
-    height: 0;
-    background-image: linear-gradient(to right, #0f7404 , #5cb917 );
-    border-radius: 5px;
-    color: white;
-} */
 .nav-hover {
   position: relative;
   border-radius: 5px;
-  /* padding: 5px 20px; */
+  padding: 3px 15px;
   z-index: 200;
 }
 .nav-item::after {
@@ -126,17 +76,6 @@ a {
 .nav-item:hover .nav-link {
   color: #fff !important;
 }
-
-/* .nan-link{
-    position: absolute;
-    z-index: 200;
-} */
-/* .nav-link:hover{
-    background-image: linear-gradient(to right, #0f7404 , #5cb917 );
-    border-radius: 4px;
-    color: white;
-} */
-
 .nav-bg {
   background-image: url(../asstes/imgs/header-bg.png);
   background-size: cover;
@@ -172,7 +111,7 @@ a {
 /* End navbar */
 /* Start Header */
 header {
-  height: calc(100vh - 55px);
+  height: 100vh;
   position: relative;
 }
 .carousel-item_title {
@@ -185,6 +124,9 @@ header {
   padding: 5px 10px;
   font-size: 25px;
 }
+.header__text{
+  transform: translateY(-120px);
+}
 .dout {
   width: 10px;
   height: 10px;
@@ -194,12 +136,8 @@ header {
 .dout:hover {
   background-color: #0f7404;
 }
-.carousel-item {
-  background-size: cover;
-  background-position-y: -150px;
-  position: relative;
-  z-index: 1;
-}
+
+
 .slider-img-one {
   background-image: url("../asstes/imgs/banner.jpg");
 }
@@ -214,11 +152,6 @@ header {
   width: 50px;
 }
 
-.carousel-item__title {
-  font-size: calc(var(--font-size) * 3);
-}
-/* End Header */
-/* Start Feature box */
 .card-icon__box {
   height: 80px;
   width: 80px;
@@ -236,7 +169,7 @@ header {
 .card-body h3 {
   font-weight: 700;
 }
-/* End Feature box */
+
 .feature-box {
   width: calc((100% - 60px) / 4);
   height: 360px;
@@ -271,12 +204,18 @@ header {
     width: calc((100% - 30px) / 2);
     margin-bottom: 20px;
   }
+  /* .feature-boxs{
+    height: 200vh;
+  } */
 }
 @media screen and (max-width: 768px) {
   .feature-box {
     width: 100%;
     margin-bottom: 20px;
   }
+  /* .feature-boxs{
+    height: 250vh;
+  } */
 }
 /* End Feature box */
 /* Start Services section */
@@ -470,9 +409,9 @@ header {
   padding: 150px 0px;
 }
 .footer__icon {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   background-color: white;
   color: #03262c;
   transition: all 0.3s;
@@ -651,3 +590,4 @@ header {
 .copun-row {
   border-bottom: 1px solid #dae1e8;
 }
+
